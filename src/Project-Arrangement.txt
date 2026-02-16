@@ -71,3 +71,56 @@ priContactContainer[
 
     Footer (Not decided yet)
 ]
+
+====== Component: TopicSelectionPage======
+background color
+ScienceSection[
+    scienceImg
+    scienceText
+    startButton
+]
+TechSection[
+    TechImg
+   TechText
+    startButton
+]
+SportSection[
+   sportsImg
+   sportsText
+    startButton
+]
+AnimeSection[
+  AnimeImg
+    AnimeText
+    startButton
+]
+
+====== Component: QuizQuestionPage ======
+background
+priQuizContainer[
+    questionText
+]
+optionsContainer[
+    optionA[
+        optionAText
+    ]
+    optionB[
+        optionBText
+    ]
+    optionC[
+        optionCText
+    ]
+    optionD[
+        optionDText
+    ]
+]
+
+
+====== Component: CongratsPage ======
+background
+priCongratsContainer[
+    trophyImage
+    priCongratsText
+    secCongratsText
+    finalText
+]
