@@ -3,7 +3,8 @@ const TopicSelectionPage = () => {
     <>
       <div className="background min-h-screen bg-gray-50 text-gray-100">
         <main className="min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-8 p-4">
-          <div className="scienceSection bg-slate-700 rounded-2xl p-8 flex flex-col items-center gap-6">
+          <div className="scienceSection bg-slate-700 rounded-2xl p-8 flex flex-col items-center gap-6
+          shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-slate-500 hover:scale-105">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="120"
@@ -20,15 +21,17 @@ const TopicSelectionPage = () => {
               <path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z" />
               <path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z" />
             </svg>
-            <p className="scienceText font-semibold text-[25px]">
+            <p className="scienceText font-semibold text-[18px] md:text-[20px] lg:text-[25px]">
               Science 'N' Nature
             </p>
-            <button className="scienceButton  bg-yellow-400 rounded-4xl px-4 py-2 w-40 font-medium text-[18px]">
+            {/* <button className="scienceButton  bg-yellow-400 rounded-4xl px-4 py-2 w-40 font-medium text-[14px] md:text-[16px] lg:text-[18px]
+            shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-yellow-500 hover:scale-105">
               Start
-            </button>
-          </div>
+            </button> */}
+          </div> 
 
-          <div className="techSection bg-slate-700 rounded-2xl p-8 flex flex-col items-center gap-6">
+          <div className="techSection bg-slate-700 rounded-2xl p-8 flex flex-col items-center gap-6
+          shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-slate-500 hover:scale-105">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="120"
@@ -44,15 +47,17 @@ const TopicSelectionPage = () => {
               <path d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" />
               <path d="M20.054 15.987H3.946" />
             </svg>
-            <p className="techText font-semibold text-[25px]">
+            <p className="techText font-semibold text-[18px] md:text-[20px] lg:text-[25px]">
               Tech 'N' Computer
             </p>
-            <button className="techButton  bg-yellow-400 rounded-4xl px-4 py-2 w-40 font-medium text-[18px]">
+            {/* <button className="techButton  bg-yellow-400 rounded-4xl px-4 py-2 w-40 font-medium text-[14px] md:text-[16px] lg:text-[18px]
+            shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-yellow-500 hover:scale-105">
               Start
-            </button>
+            </button> */}
           </div>
 
-          <div className="sportSection bg-slate-700 rounded-2xl p-8 flex flex-col items-center gap-6">
+          <div className="sportSection bg-slate-700 rounded-2xl p-8 flex flex-col items-center gap-6
+          shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-slate-500 hover:scale-105">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="108"
@@ -72,13 +77,15 @@ const TopicSelectionPage = () => {
               <path d="M6.3 3.8a16.55 16.55 0 0 0 1.9 11.5" />
               <circle cx="12" cy="12" r="10" />
             </svg>
-            <p className="sportText font-semibold text-[25px]">Sports</p>
-            <button className="sportButton  bg-yellow-400 rounded-4xl px-4 py-2 w-40 font-medium text-[18px]">
+            <p className="sportText font-semibold text-[18px] md:text-[20px] lg:text-[25px]">Sports</p>
+            {/* <button className="sportButton  bg-yellow-400 rounded-4xl px-4 py-2 w-40 font-medium text-[14px] md:text-[16px] lg:text-[18px]
+            shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-yellow-500 hover:scale-105">
               Start
-            </button>
+            </button> */}
           </div>
 
-          <div className="animeSection bg-slate-700 rounded-2xl p-8 flex flex-col items-center gap-6">
+          <div className="animeSection bg-slate-700 rounded-2xl p-8 flex flex-col items-center gap-6
+          shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-slate-500 hover:scale-105">
             <svg
               className="w-30 h-30 text-gray-100"
               viewBox="144 144 512 512"
@@ -92,12 +99,13 @@ const TopicSelectionPage = () => {
               </g>
             </svg>
 
-            <p className="animeText font-semibold text-[25px]">
+            <p className="animeText font-semibold text-[18px] md:text-[20px] lg:text-[25px]">
               Anime'N' Manga
             </p>
-            <button className="animeButton  bg-yellow-400 rounded-4xl px-4 py-2 w-40 font-medium text-[18px]">
+            {/* <button className="animeButton  bg-yellow-400 rounded-4xl px-4 py-2 w-40 font-medium text-[14px] md:text-[16px] lg:text-[18px]
+            shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:bg-yellow-500 hover:scale-105">
               Start
-            </button>
+            </button> */}
           </div>
         </main>
       </div>

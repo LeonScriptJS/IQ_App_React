@@ -5,14 +5,15 @@ const AboutUs = () => {
   return (
     <>
       <div className="background min-h-screen bg-gray-50 text-gray-100">
-        <div className="primaryContainer bg-slate-700 m-0.5 p-4 rounded-4xl h-screen">
+        <div className="primaryContainer bg-slate-700 min-h-screen mx-1 p-4 rounded-3xl
+        ">
           <NavBar />
           <main className="px-10 py-8">
-            <h1 className="priAboutText font-semibold text-[60px] text-left mx-2 my-3">
+            <h1 className="priAboutText font-semibold text-[40px] md:text-[50px] lg:text-[60px] text-left mx-2 my-3">
               About Us
             </h1>
 
-            <p className="secAboutText font-normal text-[16px] leading-7  text-left place-content-center mx-4 my-7">
+            <p className="secAboutText font-normal text-[12px] md:text-[14px] lg:text-[16px] leading-7  text-left place-content-center mx-4 my-7">
               This website was created to explore how people think, not to test
               how much they remember. <br /> We noticed that many curious,
               intelligent people often doubt themselves. They learn fast, think

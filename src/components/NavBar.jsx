@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <header className="flex items-center justify-between px-3 py-2 sticky top-0">
+    <header className="flex items-center justify-between px-3 py-2">
       <div className="logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -30,13 +30,13 @@ const NavBar = () => {
       <div className="navBar">
         <nav>
           <ul className="navBar flex space-x-6">
-            <li>
+            <li className="shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:text-yellow-500 hover:scale-105">
               <Link to={"/"}>Home</Link>
             </li>
-            <li>
+            <li className="shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:text-yellow-500 hover:scale-105">
               <Link to={"/about"}>About Us</Link>
             </li>
-            <li>
+            <li className="shadow-md hover:shadow-xl transition-all duration-300 ease-in-out hover:-translate-y-1 hover:text-yellow-500 hover:scale-105">
               <Link to={"/contact"}>Contact</Link>
             </li>
           </ul>

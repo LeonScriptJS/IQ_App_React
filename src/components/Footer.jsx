@@ -7,7 +7,7 @@ const Footer = () => {
         href="https://github.com/LeonScriptJS/IQ_App_React"
         target="_blank"
         rel="noopener noreferrer"
-        className="underline hover:text-white"
+        className="underline hover:text-yellow-500"
       >
         LeonScriptJS
       </a>{" "}
