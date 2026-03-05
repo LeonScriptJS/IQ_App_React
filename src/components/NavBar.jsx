@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="flex items-center justify-between px-3 py-2">
+    <header className="flex items-center justify-between px-3 py-2 relative">
+
+      {/* Logo */}
       <div className="logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -27,21 +32,53 @@ const NavBar = () => {
         </svg>
       </div>
 
-      <div className="navBar">
-        <nav>
-          <ul className="navBar flex space-x-6">
-            <li className=" transition-all duration-300 ease-in-out hover:-translate-y-1 hover:text-yellow-500 hover:scale-105">
-              <Link to={"/"}>Home</Link>
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex items-center space-x-6">
+
+        <Link to="/" className="hover:text-yellow-500 transition">
+          Home
+        </Link>
+
+        <Link to="/about" className="hover:text-yellow-500 transition">
+          About Us
+        </Link>
+
+        <Link to="/contact" className="hover:text-yellow-500 transition">
+          Contact
+        </Link>
+
+      </div>
+
+      {/* Mobile Menu Button */}
+      <button
+        className="md:hidden text-xl"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </button>
+
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <div className="absolute top-14 right-3 bg-slate-700 rounded-xl p-4 shadow-lg md:hidden z-50">
+          <ul className="space-y-3">
+            <li>
+              <Link to="/" onClick={() => setMenuOpen(false)}>
+                Home
+              </Link>
             </li>
-            <li className="transition-all duration-300 ease-in-out hover:-translate-y-1 hover:text-yellow-500 hover:scale-105">
-              <Link to={"/about"}>About Us</Link>
+            <li>
+              <Link to="/about" onClick={() => setMenuOpen(false)}>
+                About
+              </Link>
             </li>
-            <li className=" transition-all duration-300 ease-in-out hover:-translate-y-1 hover:text-yellow-500 hover:scale-105">
-              <Link to={"/contact"}>Contact</Link>
+            <li>
+              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+                Contact
+              </Link>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      )}
     </header>
   );
 };
